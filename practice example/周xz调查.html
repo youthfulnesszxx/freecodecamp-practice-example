@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles3.css">
+  </head>
+  <body>
+    <h1 id="title">Formmm</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org"><!-- where you'd like -->
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" type="text" placeholder="请输入姓名" required></label>
+        <label for="email" id="email-label">Enter Your Name: <input id="email" type="email" placeholder="请输入邮箱" required></label>
+        <label for="number" id="number-label">Which Number Do You Like(14-18)? <input id="number" type="number" min="14" max="18" placeholder="请输入某个数字" required></label>
+      </fieldset>
+      <fieldset>
+        <label>周xz学什么专业？ </label>
+          <select id="dropdown" required>
+            <option value="">(选一个吧)</option>
+            <option value="1">大数据应用管理</option>
+            <option value="2">大数据应用于管理</option>
+            <option value="3">大数据应用与管理</option>
+            <option value="4">大数据管理与应用</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset required>
+        <legend>周xz值得信赖吗？</legend>
+        <label for="yes"><input id="yes" type="radio" name="信赖与否" value="yes" class="inline">yes</label>
+        <label for="yessss"><input id="yessss" type="radio" name="信赖与否" value="yessss" class="inline" checked>yessss</label>
+      </fieldset>
+      <fieldset>
+        <legend>你觉得周xz是个怎样的人？</legend>
+          <input id="为人友善" type="checkbox" name="personality" value="为人友善"> <label for="为人友善">为人友善</label>
+          <input id="乐观向上" type="checkbox" name="personality" value="乐观向上"> <label for="乐观向上">乐观向上</label>
+          <input id="效率极高" type="checkbox" name="personality" value="效率极高"> <label for="效率极高">效率极高</label>
+          <input id="喜*****看" type="checkbox" name="personality" value="喜*****看" checked> <label for="喜*****看">喜*****看</label>
+      </fieldset>
+      <fieldset>
+        <label for="comment" required>Give some wish for 周xz：          
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Good luck！"></textarea>
+        <input id="comment" type="file" required>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
